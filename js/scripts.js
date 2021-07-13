@@ -28,7 +28,7 @@ function traduct() {
     x.className = "center-screen d-none";
 
         // similar behavior as clicking on a link
-        window.location.href = "https://translate.google.com/translate?sl=en&tl=es&u=https://jumanchuk.github.io./";
+        window.location.href = "https://translate.google.com/translate?sl=en&tl=es&u=https://jumanchuk.github.io/";
 
     }, 3000);	// call function after 3000 milliseconds or 3 seconds
 
@@ -47,7 +47,7 @@ function traduct() {
     }, 3000);	// call function after 3000 milliseconds or 3 seconds
 
     // similar behavior as clicking on a link
-    //window.location.href = "WEB_DIR";
+    window.location.href = "https://jumanchuk.github.io/";
 
   }
 
