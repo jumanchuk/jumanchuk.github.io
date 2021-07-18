@@ -55,7 +55,7 @@ function traduct() {
     document.getElementById("test").innerHTML = "&nbsp;&nbsp;Resetting language...";
     x.className += "center-screen d-block";
     // similar behavior as clicking on a link
-    window.history.back();
+    window.history.back(-2);
 
   }
 
