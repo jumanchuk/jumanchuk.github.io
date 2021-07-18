@@ -530,6 +530,7 @@ the links vertically instead of horizontally) */
 .fa-at {
   font-size: 2em;
   color: #fff;
+  font-size: 3em !important;
   margin: 0 10px 0 10px;
 }
 

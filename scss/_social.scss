@@ -3,6 +3,7 @@
       font-size: $social-size; 
       @if $colors == "at" {
         color:  #fff;
+        font-size: 3em !important; 
       }@else{
       color:  $social-colorbase;
       } 
