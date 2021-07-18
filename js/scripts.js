@@ -1,6 +1,6 @@
 /* Start */
 function load(){
-    document.getElementById("checkbox-trad").checked = false;
+   /* document.getElementById("checkbox-trad").checked = false;*/
 }
 
 /* Make Sound */
@@ -12,9 +12,14 @@ function beep() {
 }
 
 function traduct() {
+
+    var url = window.location.href;
+    var indexOf = url.length;
+    var ubication = url.substring(url.length-10,url.length);
+    alert(ubication);
     var audio = document.getElementById("switchSound");
     var x = document.getElementById("traduction-screen");
-    var traductVar = localStorage['traductOn'] || 'false';
+    //var traductVar = localStorage['traductOn'] || 'false';
 
     // Get the checkbox
     var checkBox = document.getElementById("checkbox-trad");
@@ -22,43 +27,29 @@ function traduct() {
     audio.play();
 
   // If the checkbox is checked
-  if (traductVar == 'false'){
+  if (checkBox.checked == true || ubication == 'index.html'){
 
-        document.getElementById("test").innerHTML = "&nbsp;&nbsp;Traduciendo al Español...";
-        x.className += "center-screen d-block";
-
+    if (window.confirm("Esta a punto de traducir el sitio al español, para regresar a la web original presionar regresar en su navegador, desea continuar?")) { 
+        
     let tID = setTimeout(function () {
+
+    document.getElementById("test").innerHTML = "&nbsp;&nbsp;Traduciendo al Español...";
+    x.className += "center-screen d-block";
 
     window.clearTimeout(tID);		// clear time out.
     
     x.className = "center-screen d-none";
     
-    localStorage.removeItem("traductOn");
     localStorage['traductOn'] = 'true'; // only strings
 
-        // similar behavior as clicking on a link
-        window.location.href = "https://translate.google.com/translate?sl=en&tl=es&u=https://jumanchuk.github.io/";
+    // similar behavior as clicking on a link
+    window.location.href = "https://translate.google.com/translate?sl=en&tl=es&u=https://jumanchuk.github.io/";
 
     }, 3000);	// call function after 3000 milliseconds or 3 seconds
+    }
+  } else{
 
-  } else {
-
-    let tID = setTimeout(function () {
-            
-    window.clearTimeout(tID);		
-    // clear time out.
-
-    x.className = "center-screen d-none";
-                
-    }, 5000);	// call function after 5000 milliseconds or 5 seconds
-
-    localStorage.removeItem("traductOn");
-    document.getElementById("test").innerHTML = "&nbsp;&nbsp;Resetting language...";
-    x.className += "center-screen d-block";
-
-        // similar behavior as clicking on a link
-        window.location.href = "https://translate.google.com/translate?sl=es&tl=en&u=https://jumanchuk.github.io/";
-
+    alert('Ya el sitio fue traducido, presione Regresar en su navegador para volver al idioma original.')
   }
 
   }
