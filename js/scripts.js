@@ -15,8 +15,7 @@ function traduct() {
 
     var url = window.location.href;
     var indexOf = url.length;
-    var ubication = url.substring(url.length-10,url.length);
-    alert(ubication);
+    var ubication = url.substring(indexOf-17,url.length);
     var audio = document.getElementById("switchSound");
     var x = document.getElementById("traduction-screen");
     //var traductVar = localStorage['traductOn'] || 'false';
@@ -27,7 +26,7 @@ function traduct() {
     audio.play();
 
   // If the checkbox is checked
-  if (checkBox.checked == true || ubication == 'index.html'){
+  if (checkBox.checked == true || ubication == 'jumanchuk.com.ar/'){
 
     if (window.confirm("Esta a punto de traducir el sitio al español, para regresar a la web original presionar regresar en su navegador, desea continuar?")) { 
         
@@ -45,11 +44,12 @@ function traduct() {
     // similar behavior as clicking on a link
     window.location.href = "https://translate.google.com/translate?sl=en&tl=es&u=https://jumanchuk.github.io/";
 
-    }, 3000);	// call function after 3000 milliseconds or 3 seconds
+    }, 5000);	// call function after 6000 milliseconds or 5 seconds
     }
   } else{
 
-    alert('Ya el sitio fue traducido, presione Regresar en su navegador para volver al idioma original.')
+    alert('Ya el sitio fue traducido, presione Regresar en su navegador para volver al idioma original.');
+    
   }
 
   }
