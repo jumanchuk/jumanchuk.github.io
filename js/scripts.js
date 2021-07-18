@@ -51,7 +51,6 @@ function traduct() {
     }, 3000);	// call function after 3000 milliseconds or 3 seconds
 
     localStorage.removeItem("traductOn");
-    alert("Done")
     document.getElementById("test").innerHTML = "&nbsp;&nbsp;Resetting language...";
     x.className += "center-screen d-block";
     // similar behavior as clicking on a link
