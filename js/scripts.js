@@ -27,7 +27,8 @@ function traduct() {
     window.clearTimeout(tID);		// clear time out.
     
     x.className = "center-screen d-none";
-
+    
+    localStorage.removeItem("traductOn");
     localStorage['traductOn'] = 'true'; // only strings
 
         // similar behavior as clicking on a link
@@ -49,7 +50,7 @@ function traduct() {
                 
     }, 3000);	// call function after 3000 milliseconds or 3 seconds
 
-    localStorage['traductOn'] = 'false'; // only strings
+    localStorage.removeItem("traductOn");
     document.getElementById("test").innerHTML = "&nbsp;&nbsp;Resetting language...";
     x.className += "center-screen d-block";
     // similar behavior as clicking on a link
