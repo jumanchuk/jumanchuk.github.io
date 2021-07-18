@@ -1,3 +1,8 @@
+/* Start */
+function load(){
+    document.getElementById("checkbox-trad").checked = false;
+}
+
 /* Make Sound */
 
 function beep() {
@@ -38,9 +43,6 @@ function traduct() {
 
   } else {
 
-        document.getElementById("test").innerHTML = "&nbsp;&nbsp;Resetting language...";
-        x.className += "center-screen d-block";
-
     let tID = setTimeout(function () {
             
     window.clearTimeout(tID);		
@@ -48,13 +50,14 @@ function traduct() {
 
     x.className = "center-screen d-none";
                 
-    }, 3000);	// call function after 3000 milliseconds or 3 seconds
+    }, 5000);	// call function after 5000 milliseconds or 5 seconds
 
     localStorage.removeItem("traductOn");
     document.getElementById("test").innerHTML = "&nbsp;&nbsp;Resetting language...";
     x.className += "center-screen d-block";
-    // similar behavior as clicking on a link
-    window.history.back(-2);
+
+        // similar behavior as clicking on a link
+        window.location.href = "https://translate.google.com/translate?sl=es&tl=en&u=https://jumanchuk.github.io/";
 
   }
 
