@@ -30,10 +30,10 @@ function traduct() {
 
     if (window.confirm("Esta a punto de traducir el sitio al español, para regresar a la web original presionar regresar en su navegador, desea continuar?")) { 
         
-    let tID = setTimeout(function () {
-
     document.getElementById("test").innerHTML = "&nbsp;&nbsp;Traduciendo al Español...";
     x.className += "center-screen d-block";
+
+    let tID = setTimeout(function () {
 
     window.clearTimeout(tID);		// clear time out.
     
