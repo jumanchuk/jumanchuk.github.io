@@ -40,11 +40,11 @@
     <!-- nav-bar -->
     <div class="topnav" id="navBar">
         <a class="logo active" href="index.html">LOGO</a>
-        <a id="navItem0" href="#About" onclick="navHide(); navigateMenu(0);">About Me</a>
-        <a id="navItem1" href="#Education" onclick="navHide(); navigateMenu(1);">Education</a>
-        <a id="navItem2" href="#Experience" onclick="navHide(); navigateMenu(2);">Experience</a>
-        <a id="navItem3" href="#Skills" onclick="navHide(); navigateMenu(3);">Skills</a>
-        <a id="navItem4" href="#Portfolio" onclick="navHide(); navigateMenu(4);">Portfolio</a>
+        <a id="navItem0" href="#About" onclick="pauseCarousel(); navHide(); navigateMenu(0);">About Me</a>
+        <a id="navItem1" href="#Education" onclick="pauseCarousel(); navHide(); navigateMenu(1);">Education</a>
+        <a id="navItem2" href="#Experience" onclick="pauseCarousel(); navHide(); navigateMenu(2);">Experience</a>
+        <a id="navItem3" href="#Skills" onclick="pauseCarousel(); navHide(); navigateMenu(3);">Skills</a>
+        <a id="navItem4" href="#Portfolio" onclick="pauseCarousel(); navHide(); navigateMenu(4);">Portfolio</a>
         <a href="javascript:void(0);" class="icon" onclick="navBarFn()">
             <i class="fa fa-bars"></i>
         </a>
@@ -65,19 +65,19 @@
                     <ul class="menu">
                         <!--Internal Links-->
                         <li class="menuItem">
-                            <div><a id="item0" href="#About" onclick="navigateMenu(0)">About Me</a></div>
+                            <div><a id="item0" href="#About" onclick="navigateMenu(0)" onmouseover="pauseCarousel()">About Me</a></div>
                         </li>
                         <li class="menuItem">
-                            <div><a id="item1" href="#Education" onclick="navigateMenu(1)">Education</a></div>
+                            <div><a id="item1" href="#Education" onclick="navigateMenu(1)" onmouseover="pauseCarousel()">Education</a></div>
                         </li>
                         <li class="menuItem">
-                            <div><a id="item2" href="#Experience" onclick="navigateMenu(2)">Experience</a></div>
+                            <div><a id="item2" href="#Experience" onclick="navigateMenu(2)" onmouseover="pauseCarousel()">Experience</a></div>
                         </li>
                         <li class="menuItem">
-                            <div><a id="item3" href="#Skills" onclick="navigateMenu(3)">Skills</a></div>
+                            <div><a id="item3" href="#Skills" onclick="navigateMenu(3)" onmouseover="pauseCarousel()">Skills</a></div>
                         </li>
                         <li class="menuItem">
-                            <div><a id="item4" href="#Portfolio" onclick="navigateMenu(4)">Portfolio</a></div>
+                            <div><a id="item4" href="#Portfolio" onclick="navigateMenu(4)" onmouseover="pauseCarousel()">Portfolio</a></div>
                         </li>
                     </ul>
                 </div>
@@ -96,8 +96,12 @@
                                                     <img class="d-block mx-auto img-fluid" src="img/face-on-shadow.png"
                                                         alt="First slide">
                                                 </div>
+                                                <div class="col-md-6 d-lg-none d-xl-none d-flex justify-content-center">
+                                                    <img class="d-block" src="img/profile-circle.png"
+                                                        alt="First slide Profile circle">
+                                                </div>
                                                 <div class="col-md-6">
-                                                    <div class="contentFront ">
+                                                    <div class="contentFront">
                                                         <h1 class="section__title section__title--roboto">About Me</h1>
 
                                                         <p class="section__paragraph"> <span
@@ -124,24 +128,12 @@
                                         <!--Second Slide-->
                                         <div id="slideItem1" class="carousel-item">
                                             <div class="row item">
-                                                <div class="col-md-6 d-none d-sm-block">
+                                                <div class="col-md-6">
                                                     <div class="contentFront">
                                                         <h1 class="section__title section__title--roboto">Education</h1>
-
-                                                        <p class="section__paragraph">Lorem ipsum dolor, sit amet
-                                                            consectetur adipisicing elit.
-                                                            Placeat
-                                                            molestiae, nemo qui ex non,
-                                                            odit sunt fuga architecto quo in hic minima aut dignissimos.
-                                                            Numquam quasi odio necessitatibus
-                                                            reiciendis repellendus.</p>
-                                                        <p class="section__paragraph">Lorem ipsum dolor, sit amet
-                                                            consectetur adipisicing elit.
-                                                            Placeat
-                                                            molestiae, nemo qui ex non,
-                                                            odit sunt fuga architecto quo in hic minima aut dignissimos.
-                                                            Numquam quasi odio necessitatibus
-                                                            reiciendis repellendus.</p>
+                                                        <p class="section__paragraph d-none d-sm-block">A lo largo de los ultimos 10 años he realizado multiples formaciones en el area de Sistemas y Desarrollo de Software, asi mismo capacitaciones enfocadas en el desarrollo de habilidades blandas.</p>
+                                                        <p class="section__paragraph d-none d-sm-block">He realizado desde formaciones en Oratoria a Diplomaturas en Desarrollo de Sotware basado en el patrón de diseño Modelo-Vista-Controlador, especificamente en el framework de .Net Core.</p>
+                                                        <p class="section__paragraph">In the following Timeline, you can watch a resume of my academical experience:</p>
 
                                                     </div>
                                                 </div>
@@ -200,7 +192,7 @@
                                                 <div class="col-md-6 d-none d-sm-block">
                                                     <div class="container">
                                                         <div class="row">
-                                                            <div class="col-dist-6 col-lg-4 scaleZoom">
+                                                            <div class="col-md-6 col-lg-4 scaleZoom">
                                                                 <a href="#"><img class="d-block mx-auto img-fluid"
                                                                         src="img/logo-bod.png" alt="Experience 1"
                                                                         onmouseover="beep()"></a>
@@ -232,7 +224,6 @@
                                                             </div>
                                                         </div>
                                                     </div>
-
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="contentFront">
@@ -242,7 +233,7 @@
                                                         <p class="section__paragraph">During my more than 10 years of
                                                             experience, I had the opportunity to work in different areas
                                                             of the Systems area, mainly in the financial area.</p>
-                                                        <p class="section__paragraph">Between 2011 and 2016, I worked as
+                                                        <p class="section__paragraph d-none d-sm-block">Between 2011 and 2016, I worked as
                                                             administrator of the Call center platform of Banco
                                                             Occidental de Discounts, BOD. I also had the opportunity to
                                                             lead a small management team, where we mainly take care of
@@ -326,10 +317,6 @@
                                         <!--Fifth Slide-->
                                         <div id="slideItem4" class="carousel-item">
                                             <div class="row item">
-                                                <div class="col-md-6 d-none d-sm-block">
-                                                    <img class="d-block mx-auto img-fluid " src="img/test.png"
-                                                        alt="Fifth slide">
-                                                </div>
                                                 <div class="col-md-6">
                                                     <div class="contentFront">
                                                         <h1 class="section__title section__title--roboto">Portfolio</h1>
@@ -346,15 +333,55 @@
                                                             odit sunt fuga architecto quo in hic minima aut dignissimos.
                                                             Numquam quasi odio necessitatibus
                                                             reiciendis repellendus.</p>
-
+                                                        <div style="margin-top: 45px;"><h5>Projects:</h3></div>
                                                         <div class="gridWeb">
-                                                            <div><a href="#">Pagina Web 1</a></div>
-                                                            <div><a href="#">Pagina Web 2</a></div>
-                                                            <div><a href="#">Pagina Web 3</a></div>
-                                                            <div><a href="#">Pagina Web 4</a></div>
+                                                            <div><a href="#">www.developed-by-me-1.com</a></div>
+                                                            <div><a href="#">www.developed-by-me-2.com</a></div>
+                                                            <div><a href="#">www.developed-by-me-3.com</a></div>
+                                                            <div><a href="#">www.developed-by-me-4.com</a></div>
+                                                            <div><a href="#">www.developed-by-me-5.com</a></div>
+                                                            <div><a href="#">www.developed-by-me-6.com</a></div>
+                                                            <div><a href="#">www.developed-by-me-7.com</a></div>
+                                                            <div><a href="#">www.developed-by-me-8.com</a></div>
                                                         </div>
-
                                                     </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-xs-1 col-md-6 col-lg-4 light-me">
+                                                                <a href="#"><img class="d-block mx-auto img-fluid"
+                                                                        src="img/portfolio-web.png" alt="Portfolio Web image"
+                                                                        onmouseover="beep()"></a>
+                                                            </div>
+                                                            <div class="col-xs-1 col-md-6 col-lg-4 light-me">
+                                                                <a href="#"><img class="d-block mx-auto img-fluid"
+                                                                        src="img/portfolio-api.png" alt="Portfolio Api image"
+                                                                        onmouseover="beep()"></a>
+                                                            </div>
+                                                            <div class="col-xs-1 col-md-6 col-lg-4 light-me">
+                                                                <a href="#"><img class="d-block mx-auto img-fluid"
+                                                                        src="img/portfolio-html.png" alt="Portfolio Html image"
+                                                                        onmouseover="beep()"></a>
+                                                            </div>
+                                                            <div class="col-xs-1 col-md-6 col-lg-4 light-me">
+                                                                <a href="#"><img class="d-block mx-auto img-fluid "
+                                                                        src="img/portfolio-react.png" alt="Portfolio Ract image"
+                                                                        onmouseover="beep()"></a>
+                                                            </div>
+                                                            <div class="col-xs-1 col-md-6 col-lg-4 light-me">
+                                                                <a href="#"><img class="d-block mx-auto img-fluid "
+                                                                        src="img/portfolio-js.png" alt="Portfolio JS image"
+                                                                        onmouseover="beep()"></a>
+                                                            </div>
+                                                            <div class="col-xs-1 col-md-6 col-lg-4   light-me">
+                                                                <a href="#"><img class="d-block mx-auto img-fluid "
+                                                                        src="img/portfolio-node.png" alt="Portfolio Node image"
+                                                                        onmouseover="beep()"></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
                                             </div>
                                         </div>

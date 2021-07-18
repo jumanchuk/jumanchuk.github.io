@@ -8,6 +8,7 @@ $gridWeb-align: center;
 $gridWeb-margin: 15px;
 $gridWeb-fontcolor: #fff;
 $gridWeb-background: transparent;
+$gridWeb-fontcolor-hover: rgb(153, 159, 187);
 
 /* Rotate */
 
@@ -230,6 +231,7 @@ body{
   }
 
   .gridWeb {
+
     display: $gridWeb-display; 
     /* Columns */
     grid-template-columns: $gridWeb-columns; 
@@ -241,10 +243,13 @@ body{
       margin: $gridWeb-margin;
       background-color: $gridWeb-background;
     }
-
     & a{
         text-decoration: none !important;
-        color: $gridWeb-fontcolor;
+        color: $gridWeb-fontcolor !important;
+        &:hover{
+          text-decoration: none !important;
+          color: $gridWeb-fontcolor-hover !important;
+        }
       }
   }
 
@@ -252,6 +257,14 @@ body{
     &:hover {
     transform: scale($scaleZoom-x,$scaleZoom-y); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
+}
+
+.light-me{
+  opacity: 0.5;
+  background-color: #000;
+  &:hover {
+    opacity: 1;
+}
 }
 
 .modal-content{
@@ -310,6 +323,9 @@ body{
   .topnav a.icon {
     float: right;
     display: block;
+  }
+  .img-fluid{
+    margin-top: 10% !important;
   }
 }
 
@@ -378,6 +394,8 @@ the links vertically instead of horizontally) */
 .section__title {
 	font-size:2.5rem !important; 
 	margin-bottom: 20px !important; 
+  padding-top: 25px;
+
 }
 
 .section__title--roboto {

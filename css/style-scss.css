@@ -293,13 +293,27 @@ ul.timeline > li:before {
 
 .gridWeb a {
   text-decoration: none !important;
-  color: #fff;
+  color: #fff !important;
+}
+
+.gridWeb a:hover {
+  text-decoration: none !important;
+  color: #999fbb !important;
 }
 
 .scaleZoom:hover {
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
   /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.light-me {
+  opacity: 0.5;
+  background-color: #000;
+}
+
+.light-me:hover {
+  opacity: 1;
 }
 
 .modal-content {
@@ -366,6 +380,9 @@ ul.timeline > li:before {
   .topnav a.icon {
     float: right;
     display: block;
+  }
+  .img-fluid {
+    margin-top: 10% !important;
   }
 }
 
@@ -439,6 +456,7 @@ the links vertically instead of horizontally) */
 .section__title {
   font-size: 2.5rem !important;
   margin-bottom: 20px !important;
+  padding-top: 25px;
 }
 
 .section__title--roboto {
