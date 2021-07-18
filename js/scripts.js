@@ -9,6 +9,7 @@ function beep() {
 function traduct() {
     var audio = document.getElementById("switchSound");
     var x = document.getElementById("traduction-screen");
+    var traductVar = localStorage['traductOn'] || 'false';
 
     // Get the checkbox
     var checkBox = document.getElementById("checkbox-trad");
@@ -16,7 +17,7 @@ function traduct() {
     audio.play();
 
   // If the checkbox is checked
-  if (checkBox.checked == true){
+  if (traductVar == 'false'){
 
         document.getElementById("test").innerHTML = "&nbsp;&nbsp;Traduciendo al Español...";
         x.className += "center-screen d-block";
@@ -26,6 +27,8 @@ function traduct() {
     window.clearTimeout(tID);		// clear time out.
     
     x.className = "center-screen d-none";
+
+    localStorage['traductOn'] = 'true'; // only strings
 
         // similar behavior as clicking on a link
         window.location.href = "https://translate.google.com/translate?sl=en&tl=es&u=https://jumanchuk.github.io/";
@@ -46,6 +49,9 @@ function traduct() {
                 
     }, 3000);	// call function after 3000 milliseconds or 3 seconds
 
+    localStorage['traductOn'] = 'false'; // only strings
+    document.getElementById("test").innerHTML = "&nbsp;&nbsp;Resetting language...";
+    x.className += "center-screen d-block";
     // similar behavior as clicking on a link
     window.history.back();
 
