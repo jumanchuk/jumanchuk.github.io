@@ -47,7 +47,7 @@ function traduct() {
     }, 3000);	// call function after 3000 milliseconds or 3 seconds
 
     // similar behavior as clicking on a link
-    window.location.href = "https://jumanchuk.github.io/";
+    window.history.back();
 
   }
 
