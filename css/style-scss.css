@@ -382,7 +382,8 @@ ul.timeline > li:before {
     display: block;
   }
   .img-fluid {
-    margin-top: 10% !important;
+    margin-top: 5% !important;
+    max-width: 100px;
   }
 }
 
