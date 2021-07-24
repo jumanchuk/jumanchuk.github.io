@@ -2,6 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 /* Custom Import */
+@font-face {
+  font-family: Signatie;
+  src: url(/fonts/Signatie.woff);
+}
+
 /* Config Social Media */
 /* Header - Top Nav */
 .topnav {
@@ -122,9 +127,13 @@ li a {
   margin: 0px;
   display: inline;
   text-decoration: none;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Signatie';
   font-weight: bolder;
   color: white !important;
+}
+
+.logo:hover {
+  background-color: #333 !important;
 }
 
 .item {

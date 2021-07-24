@@ -71,9 +71,12 @@ body{
     margin: 0px;
     display: inline;
     text-decoration: none;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Signatie';
     font-weight: bolder;
     color: rgb(255, 255, 255) !important;
+    &:hover{
+      background-color: #333 !important;
+    }
   }
 
   .item {
