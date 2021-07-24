@@ -327,7 +327,7 @@ body{
       }
   }
 
-  /* When the screen is less than 600 pixels wide, hide all links, except for
+ /* When the screen is less than 600 pixels wide, hide all links, except for
  the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 
 @media screen and (max-width: 576px) {
@@ -338,6 +338,7 @@ body{
     float: right;
     display: block;
   }
+  .d-sm-none-b{ display: none !important; }
   .img-square{max-width:50%!important;height: auto;}
   .light-me{opacity: 1!important;}
   .img-face{display: none !important;} 
