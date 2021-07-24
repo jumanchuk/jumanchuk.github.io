@@ -39,12 +39,16 @@
 
     <!-- nav-bar -->
     <div class="topnav" id="navBar">
-        <a class="logo active" href="index.html">LOGO</a>
-        <a id="navItem0" href="#About" onclick="pauseCarousel(); navHide(); navigateMenu(0);">About</a>
-        <a id="navItem1" href="#Education" onclick="pauseCarousel(); navHide(); navigateMenu(1);">Education</a>
-        <a id="navItem2" href="#Experience" onclick="pauseCarousel(); navHide(); navigateMenu(2);">Experience</a>
-        <a id="navItem3" href="#Skills" onclick="pauseCarousel(); navHide(); navigateMenu(3);">Skills</a>
-        <a id="navItem4" href="#Portfolio" onclick="pauseCarousel(); navHide(); navigateMenu(4);">Portfolio</a>
+        <a class="logo active" href="index.html">@Jumanchuk</a>
+        <a id="navItem0" class="navItem" href="#About" onclick="pauseCarousel(); navHide(); navigateMenu(0);">About</a>
+        <a id="navItem1" class="navItem" href="#Education"
+            onclick="pauseCarousel(); navHide(); navigateMenu(1);">Education</a>
+        <a id="navItem2" class="navItem" href="#Experience"
+            onclick="pauseCarousel(); navHide(); navigateMenu(2);">Experience</a>
+        <a id="navItem3" class="navItem" href="#Skills"
+            onclick="pauseCarousel(); navHide(); navigateMenu(3);">Skills</a>
+        <a id="navItem4" class="navItem" href="#Portfolio"
+            onclick="pauseCarousel(); navHide(); navigateMenu(4);">Portfolio</a>
         <a href="javascript:void(0);" class="icon" onclick="navBarFn()">
             <i class="fa fa-bars"></i>
         </a>
@@ -65,42 +69,45 @@
                     <ul class="menu">
                         <!--Internal Links-->
                         <li class="menuItem">
-                            <div><a id="item0" href="#About" onclick="navigateMenu(0)" onmouseover="pauseCarousel()">About</a></div>
+                            <div><a id="item0" href="#About" onclick="pauseCarousel();navigateMenu(0)">About</a></div>
                         </li>
                         <li class="menuItem">
-                            <div><a id="item1" href="#Education" onclick="navigateMenu(1)" onmouseover="pauseCarousel()">Education</a></div>
+                            <div><a id="item1" href="#Education" onclick="pauseCarousel();navigateMenu(1)">Education</a>
+                            </div>
                         </li>
                         <li class="menuItem">
-                            <div><a id="item2" href="#Experience" onclick="navigateMenu(2)" onmouseover="pauseCarousel()">Experience</a></div>
+                            <div><a id="item2" href="#Experience"
+                                    onclick="pauseCarousel();navigateMenu(2)">Experience</a></div>
                         </li>
                         <li class="menuItem">
-                            <div><a id="item3" href="#Skills" onclick="navigateMenu(3)" onmouseover="pauseCarousel()">Skills</a></div>
+                            <div><a id="item3" href="#Skills" onclick="pauseCarousel();navigateMenu(3)">Skills</a></div>
                         </li>
                         <li class="menuItem">
-                            <div><a id="item4" href="#Portfolio" onclick="navigateMenu(4)" onmouseover="pauseCarousel()">Portfolio</a></div>
+                            <div><a id="item4" href="#Portfolio" onclick="pauseCarousel();navigateMenu(4)">Portfolio</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
 
-                <div class="col-md-11 col-lg-11">
+                <div class="col-md-12 col-lg-11">
                     <div id="carouselWeb" class="carousel vert slide carousel-fade" data-ride="carousel"
                         data-interval="5000" data-pause="hover">
                         <div class="container-flud">
                             <div class="row fullScreen">
-                                <div class="col-lg-11 content col-md-11">
+                                <div class="col-lg-11 content col-md-12">
                                     <div class="carousel-inner">
                                         <!--First Slide-->
                                         <div id="slideItem0" class="carousel-item active">
                                             <div class="row item">
-                                                <div class="col-md-6 d-none d-sm-block">
-                                                    <img class="d-block mx-auto img-fluid" src="img/face-on-shadow.png"
-                                                        alt="First slide">
+                                                <div class="d-xs-none col-md-7 col-lg-6">
+                                                    <img class="d-xs-none mx-auto d-md-flex justify-content-center img-face"
+                                                        src="img/face-on-shadow.png" alt="First slide">
                                                 </div>
-                                                <div class="col-md-6 d-lg-none d-xl-none d-flex justify-content-center">
-                                                    <img class="d-block" src="img/profile-circle.png"
-                                                        alt="First slide Profile circle">
+                                                <div class="col-md-6 d-md-none">
+                                                    <img class=" mx-auto d-flex justify-content-center"
+                                                        src="img/profile-circle.png" alt="First slide Profile circle">
                                                 </div>
-                                                <div class="col-md-6">
+                                                <div class="col-md-5 col-lg-6">
                                                     <div class="contentFront">
                                                         <h1 class="section__title section__title--roboto">About Me</h1>
 
@@ -131,9 +138,16 @@
                                                 <div class="col-md-6">
                                                     <div class="contentFront">
                                                         <h1 class="section__title section__title--roboto">Education</h1>
-                                                        <p class="section__paragraph d-none d-sm-block">Throughout the last 10 years I have carried out multiple trainings in the area of Systems and Software Development, as well as trainings focused on the development of soft skills.</p>
-                                                        <p class="section__paragraph d-none d-sm-block">I have done from training in Speech to Diplomas in Software Development based on the Model-View-Controller design pattern, specifically in the .Net Core framework.</p>
-                                                        <p class="section__paragraph">In the following Timeline, you can watch a resume of my academical experience:</p>
+                                                        <p class="section__paragraph d-none d-sm-block">Throughout the
+                                                            last 10 years I have carried out multiple trainings in the
+                                                            area of Systems and Software Development, as well as
+                                                            trainings focused on the development of soft skills.</p>
+                                                        <p class="section__paragraph d-none d-sm-block">I have done from
+                                                            training in Speech to Diplomas in Software Development based
+                                                            on the Model-View-Controller design pattern, specifically in
+                                                            the .Net Core framework.</p>
+                                                        <p class="section__paragraph">In the following Timeline, you can
+                                                            watch a resume of my academical experience:</p>
 
                                                     </div>
                                                 </div>
@@ -142,28 +156,28 @@
                                                         <li>
                                                             <a href="#" data-toggle="modal"
                                                                 data-target="#educationModal1" onclick="pauseCarousel()"
-                                                                onmouseover="beep()">Desarrollo Full Stack</a>
+                                                                onmouseover="beep()">Full Stack Developer</a>
                                                             <a class="float-right">2021</a>
                                                             <p>Coderhouse.</p>
                                                         </li>
                                                         <li>
                                                             <a href="#" data-toggle="modal"
                                                                 data-target="#educationModal2" onclick="pauseCarousel()"
-                                                                onmouseover="beep()">Experto Universitario en .Net</a>
+                                                                onmouseover="beep()">.Net Developer</a>
                                                             <a class="float-right">2020</a>
                                                             <p>Universidad Tecnológica Nacional.</p>
                                                         </li>
                                                         <li>
                                                             <a href="#" data-toggle="modal"
                                                                 data-target="#educationModal3" onclick="pauseCarousel()"
-                                                                onmouseover="beep()">Diplomado en Webmaster</a>
+                                                                onmouseover="beep()">Webmaster</a>
                                                             <a class="float-right">2015</a>
                                                             <p>Universidad Rafael Belloso Chacín.</p>
                                                         </li>
                                                         <li>
                                                             <a href="#" data-toggle="modal"
                                                                 data-target="#educationModal4" onclick="pauseCarousel()"
-                                                                onmouseover="beep()">Ing. En Informatica</a>
+                                                                onmouseover="beep()">Informatics Engineer</a>
                                                             <a class="float-right">2011</a>
                                                             <p>Universidad Rafael Belloso Chacín.</p>
                                                         </li>
@@ -177,7 +191,7 @@
                                                         <li>
                                                             <a href="#" data-toggle="modal"
                                                                 data-target="#educationModal6" onclick="pauseCarousel()"
-                                                                onmouseover="beep()">T.S.U. En Informatica</a>
+                                                                onmouseover="beep()">Superior computer technician</a>
                                                             <a class="float-right">2009</a>
                                                             <p>Instituto de Tecnologia Readic UNIR.</p>
                                                         </li>
@@ -189,35 +203,35 @@
                                         <!-- Third Slide-->
                                         <div id="slideItem2" class="carousel-item">
                                             <div class="row item">
-                                                <div class="col-md-6 d-none d-sm-block">
+                                                <div class="col-md-6 d-none d-md-block">
                                                     <div class="container">
                                                         <div class="row">
-                                                            <div class="col-md-6 col-lg-4 scaleZoom">
+                                                            <div class="d-xs-none  col-md-5 col-lg-4 scaleZoom">
                                                                 <a href="#"><img class="d-block mx-auto img-fluid"
                                                                         src="img/logo-bod.png" alt="Experience 1"
                                                                         onmouseover="beep()"></a>
                                                             </div>
-                                                            <div class="col-md-6 col-lg-4 scaleZoom">
+                                                            <div class="d-xs-none col-md-5 col-lg-4 scaleZoom">
                                                                 <a href="#"><img class="d-block mx-auto img-fluid"
                                                                         src="img/logo-eco.png" alt="Experience 2"
                                                                         onmouseover="beep()"></a>
                                                             </div>
-                                                            <div class="col-md-6 col-lg-4 scaleZoom">
+                                                            <div class="d-xs-none col-md-5  col-lg-4 scaleZoom">
                                                                 <a href="#"><img class="d-block mx-auto img-fluid "
                                                                         src="img/logo-tshop.png" alt="Experience 3"
                                                                         onmouseover="beep()"></a>
                                                             </div>
-                                                            <div class="col-md-6 col-lg-4 scaleZoom">
+                                                            <div class="d-xs-none col-md-5 col-lg-4 scaleZoom">
                                                                 <a href="#"><img class="d-block mx-auto img-fluid "
                                                                         src="img/logo-hipotec.png" alt="Experience 4"
                                                                         onmouseover="beep()"></a>
                                                             </div>
-                                                            <div class="col-md-6 col-lg-4 scaleZoom">
+                                                            <div class="d-xs-none col-md-5 col-lg-4 scaleZoom">
                                                                 <a href="#"><img class="d-block mx-auto img-fluid "
                                                                         src="img/logo-seg.png" alt="Experience 5"
                                                                         onmouseover="beep()"></a>
                                                             </div>
-                                                            <div class="col-md-6 col-lg-4 scaleZoom">
+                                                            <div class="col-md-5 col-lg-4 scaleZoom">
                                                                 <a href="#"><img class="d-block mx-auto img-fluid "
                                                                         src="img/logo-iudu.png" alt="Experience 6"
                                                                         onmouseover="beep()"></a>
@@ -233,7 +247,7 @@
                                                         <p class="section__paragraph">During my more than 10 years of
                                                             experience, I had the opportunity to work in different areas
                                                             of the Systems area, mainly in the financial area.</p>
-                                                        <p class="section__paragraph d-none d-sm-block">Between 2011 and 2016, I worked as
+                                                        <p class="section__paragraph">Between 2011 and 2016, I worked as
                                                             administrator of the Call center platform of Banco
                                                             Occidental de Discounts, BOD. I also had the opportunity to
                                                             lead a small management team, where we mainly take care of
@@ -241,8 +255,7 @@
                                                             addition to monitoring goals, indicators and KPIs of all the
                                                             managements that make up the VP. of operations and
                                                             Electronic Channels.</p>
-                                                                
-                                                        <p><a href="#">Read More +</a></p>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -251,32 +264,27 @@
                                         <!-- Fourth Slide-->
                                         <div id="slideItem3" class="carousel-item">
                                             <div class="row item">
-                                                <div class="col-md-6 d-none d-sm-block">
+                                                <div class="light-bulb d-xs-none col-md-12 col-lg-6">
                                                     <!--<img class="d-block mx-auto img-fluid " src="img/bombilla-off.png"
                                                         alt="Fourth slide">-->
-                                                    <div class="light-bulb"></div>
                                                 </div>
-                                                <div class="col-md-6">
+                                                <div class="col-md-12 col-lg-6">
                                                     <div class="contentFront">
                                                         <h1 class="section__title section__title--roboto">SKILLS</h1>
 
-                                                        <p class="section__paragraph">Lorem ipsum dolor, sit amet
-                                                            consectetur adipisicing elit.
-                                                            Placeat
-                                                            molestiae, nemo qui ex non,
-                                                            odit sunt fuga architecto quo in hic minima aut dignissimos.
-                                                            Numquam quasi odio necessitatibus
-                                                            reiciendis repellendus.</p>
+                                                        <p class="section__paragraph">
+                                                            Experience in creating modern applications using the MERN
+                                                            stack. Programmed in Javascript on the server side applying
+                                                            asynchronous techniques.
 
-                                                        <p class="section__paragraph">Lorem ipsum dolor, sit amet
-                                                            consectetur adipisicing elit.
-                                                            Atque
-                                                            reprehenderit eos assumenda exercitationem, quo voluptates
-                                                            fuga
-                                                            debitis amet. Dignissimos at eveniet, natus et cumque
-                                                            repellat
-                                                            ipsa
-                                                            quibusdam quod? Repellendus, ea!</p>
+                                                            ReactJS: Design of efficient components and scalable
+                                                            browsability experiences, using patterns and syntax from ES6
+                                                            and JSX. Firebase to be able to store and consult dynamic,
+                                                            changing and reactive information.
+
+                                                            SPA application development and prototype design.
+
+                                                            Interactive web solutions in any JavaScript framework.</p>
 
                                                         <div class="flexGrid">
                                                             <div class="childFlex">
@@ -321,12 +329,14 @@
                                                             odit sunt fuga architecto quo in hic minima aut dignissimos.
                                                             Numquam quasi odio necessitatibus
                                                             reiciendis repellendus.</p>
-                                                        <div style="margin-top: 45px;"><h5>Projects:</h3></div>
+                                                        <div style="margin-top: 45px;">
+                                                            <h5>Projects:</h3>
+                                                        </div>
                                                         <div class="gridWeb">
-                                                            <div><a href="https://github.com/jumanchuk/call-api-dll">Call Api DLL</a></div>
-                                                            <div><a href="#">www.developed-by-me-2.com</a></div>
-                                                            <div><a href="#">www.developed-by-me-3.com</a></div>
-                                                            <div><a href="#">www.developed-by-me-4.com</a></div>
+                                                            <div><a href="https://github.com/jumanchuk/call-api-dll" target='_blank'>Call Api DLL</a></div>
+                                                            <div><a href="https://github.com/jumanchuk/AspNetCoreBank" target='_blank'>Asp .Net Core Bank</a></div>
+                                                            <div><a href="https://github.com/jumanchuk/api.web.banco" target='_blank'>Api Web Banco</a></div>
+                                                            <div><a href="https://github.com/jumanchuk/jumanchuk.github.io" target='_blank'>jumanchuk.github.io</a></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -334,33 +344,45 @@
                                                     <div class="container">
                                                         <div class="row">
                                                             <div class="col-xs-1 col-md-6 col-lg-4 light-me">
-                                                                <a href="#"><img class="d-block mx-auto img-fluid"
-                                                                        src="img/portfolio-web.png" alt="Portfolio Web image"
+                                                                <a href="#"><img
+                                                                        class="d-block mx-auto img-fluid img-square"
+                                                                        src="img/portfolio-web.png"
+                                                                        alt="Portfolio Web image"
                                                                         onmouseover="beep()"></a>
                                                             </div>
                                                             <div class="col-xs-1 col-md-6 col-lg-4 light-me">
-                                                                <a href="#"><img class="d-block mx-auto img-fluid"
-                                                                        src="img/portfolio-api.png" alt="Portfolio Api image"
+                                                                <a href="#"><img
+                                                                        class="d-block mx-auto img-fluid img-square"
+                                                                        src="img/portfolio-api.png"
+                                                                        alt="Portfolio Api image"
                                                                         onmouseover="beep()"></a>
                                                             </div>
                                                             <div class="col-xs-1 col-md-6 col-lg-4 light-me">
-                                                                <a href="#"><img class="d-block mx-auto img-fluid"
-                                                                        src="img/portfolio-html.png" alt="Portfolio Html image"
+                                                                <a href="#"><img
+                                                                        class="d-block mx-auto img-fluid img-square"
+                                                                        src="img/portfolio-html.png"
+                                                                        alt="Portfolio Html image"
                                                                         onmouseover="beep()"></a>
                                                             </div>
                                                             <div class="col-xs-1 col-md-6 col-lg-4 light-me">
-                                                                <a href="#"><img class="d-block mx-auto img-fluid "
-                                                                        src="img/portfolio-react.png" alt="Portfolio Ract image"
+                                                                <a href="#"><img
+                                                                        class="d-block mx-auto img-fluid img-square"
+                                                                        src="img/portfolio-react.png"
+                                                                        alt="Portfolio Ract image"
                                                                         onmouseover="beep()"></a>
                                                             </div>
                                                             <div class="col-xs-1 col-md-6 col-lg-4 light-me">
-                                                                <a href="#"><img class="d-block mx-auto img-fluid "
-                                                                        src="img/portfolio-js.png" alt="Portfolio JS image"
+                                                                <a href="#"><img
+                                                                        class="d-block mx-auto img-fluid img-square"
+                                                                        src="img/portfolio-js.png"
+                                                                        alt="Portfolio JS image"
                                                                         onmouseover="beep()"></a>
                                                             </div>
                                                             <div class="col-xs-1 col-md-6 col-lg-4   light-me">
-                                                                <a href="#"><img class="d-block mx-auto img-fluid "
-                                                                        src="img/portfolio-node.png" alt="Portfolio Node image"
+                                                                <a href="#"><img
+                                                                        class="d-block mx-auto img-fluid img-square"
+                                                                        src="img/portfolio-node.png"
+                                                                        alt="Portfolio Node image"
                                                                         onmouseover="beep()"></a>
                                                             </div>
                                                         </div>
@@ -431,7 +453,7 @@
                             <div class="col-lg-12 d-flex justify-content-center">
                             </div>
                             <div class="col-lg-4 d-flex justify-content-center">
-                                <iframe class="contact-iframe" src="contact.html" height="600px"
+                                <iframe id="testIframe" class="contact-iframe" src="contact.html" height="600px"
                                     frameBorder="0"></iframe>
                             </div>
                             <div class="col-lg-8 d-flex justify-content-center">
@@ -447,11 +469,11 @@
                 <!-- Modal footer -->
                 <div class="modal-footer d-flex justify-content-center">
                     <span>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/Jumanchuk/" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/umanchuk/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/jumanchuk/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://ar.pinterest.com/jumanchuk/" target="_blank"><i class="fab fa-pinterest"></i></a>
+                        <a href="https://github.com/jumanchuk/" target="_blank"><i class="fab fa-github"></i></a>
                     </span>
                 </div>
 
@@ -467,27 +489,24 @@
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h1 class="modal__title modal__title--uppercase">Desarrollo Full Stack</h1>
+                    <h1 class="modal__title modal__title--uppercase">Full Stack Developer</h1>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
+
+                
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="d-flex flex-column bd-highlight mb-3">
                                 <div class="p-2 bd-highlight"><span
-                                        class="modal__paragraph modal__paragraph--important">Creación de aplicaciones
-                                        modernas utilizando el MERN stack</span>. Programadas en Javascript
-                                    del lado del servidor aplicando técnicas asincrónicas.</div>
-                                <div class="p-2 bd-highlight">ReactJS: Diseño de componentes eficientes y experiencias
-                                    de navegabilidad
-                                    escalables, utilizando patrones y sintaxis de ES6 y JSX . Firebase para poder
-                                    almacenar y consultar información dinámica, cambiante y reactiva.</div>
-                                <div class="p-2 bd-highlight">Desarrollo de aplicaciones SPA y diseño de prototipos.
-                                </div>
-                                <div class="p-2 bd-highlight">Soluciones web interactivas en cualquiera framework
-                                    JavaScript.</div>
+                                        class="modal__paragraph modal__paragraph--important">Experience in creating modern applications using the MERN stack</span>. 
+                                        Programmed in Javascript on the server side applying asynchronous techniques. ReactJS: Design of efficient
+                                         components and scalable browsability experiences, using patterns and syntax from ES6 and JSX. 
+                                         Firebase to be able to store and consult dynamic, changing and reactive information.
+                                          SPA application development and prototype design. Interactive web
+                                           solutions in any JavaScript framework.</div>
                             </div>
                         </div>
                     </div>
@@ -509,27 +528,25 @@
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h1 class="modal__title modal__title--uppercase">Experto Universitario en .Net</h1>
+                    <h1 class="modal__title modal__title--uppercase">.Net Developer</h1>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="d-flex flex-column bd-highlight mb-3">
-                                <div class="p-2 bd-highlight"><span
-                                        class="modal__paragraph modal__paragraph--important">Creación de aplicaciones
-                                        modernas utilizando el MERN stack</span>. Programadas en Javascript
-                                    del lado del servidor aplicando técnicas asincrónicas.</div>
-                                <div class="p-2 bd-highlight">ReactJS: Diseño de componentes eficientes y experiencias
-                                    de navegabilidad
-                                    escalables, utilizando patrones y sintaxis de ES6 y JSX . Firebase para poder
-                                    almacenar y consultar información dinámica, cambiante y reactiva.</div>
-                                <div class="p-2 bd-highlight">Desarrollo de aplicaciones SPA y diseño de prototipos.
-                                </div>
-                                <div class="p-2 bd-highlight">Soluciones web interactivas en cualquiera framework
-                                    JavaScript.</div>
+                                <div class="p-2 bd-highlight">
+                                    Implementation of complete programs that could be used in a commercial application of an intranet.
+                                    Development of classes to connect programs to SQL database systems using the core aspects of the
+                                    application programming interface of connectivity with a database using simple techniques in ADO
+                                    .Net. Apply simple design patterns to create reusable classes. Organize and configure the
+                                    infrastructure to be able to incorporate a developed project
+                                    Create projects with elements of both languages
+                                    Compare the use of both languages knowing their differences
+                                    Understand the fundamental concepts of programming in Visual Basic .Net and C #
+                                    Implementation of intermediate programming concepts in programs with .Net technology
+                                    decision constructions, cycles and methods to create the flow of a program.</div>
                             </div>
                         </div>
                     </div>
@@ -551,7 +568,7 @@
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h1 class="modal__title modal__title--uppercase">Diplomado en Webmaster</h1>
+                    <h1 class="modal__title modal__title--uppercase">Webmaster</h1>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -560,18 +577,8 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="d-flex flex-column bd-highlight mb-3">
-                                <div class="p-2 bd-highlight"><span
-                                        class="modal__paragraph modal__paragraph--important">Creación de aplicaciones
-                                        modernas utilizando el MERN stack</span>. Programadas en Javascript
-                                    del lado del servidor aplicando técnicas asincrónicas.</div>
-                                <div class="p-2 bd-highlight">ReactJS: Diseño de componentes eficientes y experiencias
-                                    de navegabilidad
-                                    escalables, utilizando patrones y sintaxis de ES6 y JSX . Firebase para poder
-                                    almacenar y consultar información dinámica, cambiante y reactiva.</div>
-                                <div class="p-2 bd-highlight">Desarrollo de aplicaciones SPA y diseño de prototipos.
-                                </div>
-                                <div class="p-2 bd-highlight">Soluciones web interactivas en cualquiera framework
-                                    JavaScript.</div>
+                                <div class="p-2 bd-highlight">Design and creation of smart web pages, with applications and content manager to be
+                                    editable online.</div>
                             </div>
                         </div>
                     </div>
@@ -593,7 +600,7 @@
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h1 class="modal__title modal__title--uppercase">Ing. En Informatica</h1>
+                    <h1 class="modal__title modal__title--uppercase">Informatics Engineer</h1>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -602,18 +609,9 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="d-flex flex-column bd-highlight mb-3">
-                                <div class="p-2 bd-highlight"><span
-                                        class="modal__paragraph modal__paragraph--important">Creación de aplicaciones
-                                        modernas utilizando el MERN stack</span>. Programadas en Javascript
-                                    del lado del servidor aplicando técnicas asincrónicas.</div>
-                                <div class="p-2 bd-highlight">ReactJS: Diseño de componentes eficientes y experiencias
-                                    de navegabilidad
-                                    escalables, utilizando patrones y sintaxis de ES6 y JSX . Firebase para poder
-                                    almacenar y consultar información dinámica, cambiante y reactiva.</div>
-                                <div class="p-2 bd-highlight">Desarrollo de aplicaciones SPA y diseño de prototipos.
-                                </div>
-                                <div class="p-2 bd-highlight">Soluciones web interactivas en cualquiera framework
-                                    JavaScript.</div>
+                                <div class="p-2 bd-highlight">Trained for the diagnosis of information needs in organizations and the design and
+                                    implementation of automated systems aimed at providing, in a reliable and timely manner, the information required
+                                    for decision-making at tactical, strategic and operational levels.</div>
                             </div>
                         </div>
                     </div>
@@ -644,18 +642,8 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="d-flex flex-column bd-highlight mb-3">
-                                <div class="p-2 bd-highlight"><span
-                                        class="modal__paragraph modal__paragraph--important">Creación de aplicaciones
-                                        modernas utilizando el MERN stack</span>. Programadas en Javascript
-                                    del lado del servidor aplicando técnicas asincrónicas.</div>
-                                <div class="p-2 bd-highlight">ReactJS: Diseño de componentes eficientes y experiencias
-                                    de navegabilidad
-                                    escalables, utilizando patrones y sintaxis de ES6 y JSX . Firebase para poder
-                                    almacenar y consultar información dinámica, cambiante y reactiva.</div>
-                                <div class="p-2 bd-highlight">Desarrollo de aplicaciones SPA y diseño de prototipos.
-                                </div>
-                                <div class="p-2 bd-highlight">Soluciones web interactivas en cualquiera framework
-                                    JavaScript.</div>
+                                <div class="p-2 bd-highlight">Knowledge and skills in such areas as programming, database management, networking,
+                                    enterprise cloud technology, and security.</div>
                             </div>
                         </div>
                     </div>
@@ -678,7 +666,7 @@
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h1 class="modal__title modal__title--uppercase">T.S.U. En Informatica</h1>
+                    <h1 class="modal__title modal__title--uppercase">Superior computer technician</h1>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -687,18 +675,10 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="d-flex flex-column bd-highlight mb-3">
-                                <div class="p-2 bd-highlight"><span
-                                        class="modal__paragraph modal__paragraph--important">Creación de aplicaciones
-                                        modernas utilizando el MERN stack</span>. Programadas en Javascript
-                                    del lado del servidor aplicando técnicas asincrónicas.</div>
-                                <div class="p-2 bd-highlight">ReactJS: Diseño de componentes eficientes y experiencias
-                                    de navegabilidad
-                                    escalables, utilizando patrones y sintaxis de ES6 y JSX . Firebase para poder
-                                    almacenar y consultar información dinámica, cambiante y reactiva.</div>
-                                <div class="p-2 bd-highlight">Desarrollo de aplicaciones SPA y diseño de prototipos.
-                                </div>
-                                <div class="p-2 bd-highlight">Soluciones web interactivas en cualquiera framework
-                                    JavaScript.</div>
+                                <div class="p-2 bd-highlight">Professional with skills in the area of design, development, operation and maintenance of
+                                    computer systems, integration of technologies in telecommunications, programming and cutting-edge web tools; thus
+                                    contributing to the solution of problems in the labor and social context to optimize operations achieving
+                                    organizational efficiency.</div>
                             </div>
                         </div>
                     </div>

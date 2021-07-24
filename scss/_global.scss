@@ -69,9 +69,11 @@ body{
   .logo {
     left: 0px;
     margin: 0px;
-    color: rgb(219, 0, 0) !important;
     display: inline;
     text-decoration: none;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bolder;
+    color: rgb(255, 255, 255) !important;
   }
 
   .item {
@@ -80,8 +82,10 @@ body{
 
   #myVideo {
     position: fixed;
-    right: 0;
+    top: 0;
+    left: 0;
     bottom: 0;
+    width: 100%;
     z-index: -1;
   }
 
@@ -300,16 +304,23 @@ body{
     text-align: center;
   }
 
+  .contentFront{
+
+    margin-bottom: 15%;
+
+  }
+
   .light-bulb {
-    margin-left: 85px;
     width: 800px;
     height: 600px;
     transition: 1s;
     background: url("../img/bombilla-off.png") no-repeat;
-    display: inline-block;
+    background-position: center;
+    display: block;
       &:hover{
         transition: 0.5s;
         background: transparent url("../img/bombilla-on.png") no-repeat;
+        background-position: center;
       }
   }
 
@@ -324,22 +335,34 @@ body{
     float: right;
     display: block;
   }
+  .img-square{max-width:50%!important;height: auto;}
+  .light-me{opacity: 1!important;}
+  .img-face{display: none !important;} 
   .img-fluid{
     margin-top: 10% !important;
   }
+  .content{   padding-bottom: 20%;}
 }
 
 @media screen and (min-width: 992px) {
   .topnav a:not(:first-child) {display: none;}
 }
 
+@media screen and (min-width: 576px) {
+  a.icon:not(:first-child) {display: none;}
+  .img-face{display: none !important;} 
+  }
+
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on 
 the icon. This class makes the topnav look good on small screens (display 
 the links vertically instead of horizontally) */
+@media screen and (max-width:  768px) {
+  .img-face{margin-top:50px!important;}
+}
 
 @media screen and (max-width:  700px) {
   .topnav.responsive {position: relative;}
-  .img-fluid{margin-top: 50%;}
+  .img-fluid{margin-top: 10%; max-width: 60% !important;}
   .topnav.responsive .icon {
     position: absolute;
     right: 0;

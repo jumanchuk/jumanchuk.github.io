@@ -1,5 +1,6 @@
 /* External Import */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 /* Custom Import */
 /* Config Social Media */
 /* Header - Top Nav */
@@ -119,9 +120,11 @@ li a {
 .logo {
   left: 0px;
   margin: 0px;
-  color: #db0000 !important;
   display: inline;
   text-decoration: none;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: bolder;
+  color: white !important;
 }
 
 .item {
@@ -130,8 +133,10 @@ li a {
 
 #myVideo {
   position: fixed;
-  right: 0;
+  top: 0;
+  left: 0;
   bottom: 0;
+  width: 100%;
   z-index: -1;
 }
 
@@ -349,20 +354,25 @@ ul.timeline > li:before {
   text-align: center;
 }
 
+.contentFront {
+  margin-bottom: 15%;
+}
+
 .light-bulb {
-  margin-left: 85px;
   width: 800px;
   height: 600px;
   -webkit-transition: 1s;
   transition: 1s;
   background: url("../img/bombilla-off.png") no-repeat;
-  display: inline-block;
+  background-position: center;
+  display: block;
 }
 
 .light-bulb:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   background: transparent url("../img/bombilla-on.png") no-repeat;
+  background-position: center;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for
@@ -381,8 +391,21 @@ ul.timeline > li:before {
     float: right;
     display: block;
   }
+  .img-square {
+    max-width: 50% !important;
+    height: auto;
+  }
+  .light-me {
+    opacity: 1 !important;
+  }
+  .img-face {
+    display: none !important;
+  }
   .img-fluid {
     margin-top: 10% !important;
+  }
+  .content {
+    padding-bottom: 20%;
   }
 }
 
@@ -392,15 +415,31 @@ ul.timeline > li:before {
   }
 }
 
+@media screen and (min-width: 576px) {
+  a.icon:not(:first-child) {
+    display: none;
+  }
+  .img-face {
+    display: none !important;
+  }
+}
+
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on 
 the icon. This class makes the topnav look good on small screens (display 
 the links vertically instead of horizontally) */
+@media screen and (max-width: 768px) {
+  .img-face {
+    margin-top: 50px !important;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .topnav.responsive {
     position: relative;
   }
   .img-fluid {
-    margin-top: 50%;
+    margin-top: 10%;
+    max-width: 60% !important;
   }
   .topnav.responsive .icon {
     position: absolute;

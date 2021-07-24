@@ -39,19 +39,18 @@ function traduct() {
     
     x.className = "center-screen d-none";
     
-    localStorage['traductOn'] = 'true'; // only strings
-
     // similar behavior as clicking on a link
     window.location.href = "https://translate.google.com/translate?sl=en&tl=es&u=https://jumanchuk.github.io/";
 
     }, 5000);	// call function after 6000 milliseconds or 5 seconds
-    }
-  } else{
+    }else{
 
-    alert('Ya el sitio fue traducido, presione Regresar en su navegador para volver al idioma original.');
+        document.getElementById("checkbox-trad").checked = false;
     
-  }
-
+    
+      }
+    
+  } 
   }
 
 /* TOGGLE MENU */
@@ -82,7 +81,8 @@ function navigateMenu(id){
 
         $('div.carousel-item').removeClass("active");
         $(var1).toggleClass("active");
-
+    
+        
         $('.indicator').removeClass("active");
         $(var2).toggleClass("active");
 }
